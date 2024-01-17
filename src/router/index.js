@@ -17,6 +17,11 @@ const routes = [
     name: "Memories",
     component: memories,
   },
+  {
+    path: "/memories-details/:id",
+    name: "Memories Details",
+    component: () => import("../Pages/memoryDetails.vue"),
+  },
 ];
 
 const router = createRouter({
